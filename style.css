@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px 20px; */
+  background-color: rgb(137, 115, 88);
+}
+
+.navbar .nav_logo {
+  gap: inherit;
+  flex-direction: column;
+}
+.navbar .nav_logo img {
+  width: 90px;
+  height: 60px;
+}
+
+.nav_links ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav_links ul li a {
+  color: rgb(224, 203, 171);
+  font-size: 24px;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 7px 4px 14px rgb(68, 66, 64);
+  -webkit-text-shadow: 7px 4px 14px rgb(68, 66, 64);
+  -moz-text-shadow: 7px 4px 14px rgb(68, 66, 64);
+}
+.nav_links ul li a:hover {
+  color: #392102;
+}
+
+#logo_name {
+  color: #e5caad;
+  font-family: "Oleo Script", system-ui;
+  /* align-self:flex-end; */
+  position: relative;
+  bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -webkit-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -moz-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.register {
+  width: 40px;
+  height: 40px;
+  /* display: flex;
+  flex-flow:column center; */
+  background-color: rgb(224, 203, 171);
+  border: 1px solid rgba(0, 0, 0, 0.047);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.register:hover {
+  background-color: #392102;
+}
+.register i {
+  color: rgb(68, 66, 64);
+  position: absolute;
+  right: 13px;
+  top: 10px;
+}
+
+/* Why is it impossible to add this code into the hover part of .regisiter class since I want to see the color change when I hover over the div which has a class called register */
+.register i:hover {
+  color: rgb(224, 203, 171);
+}
+
+#register_image {
+  width: auto;
+  height: 150px;
+  position: relative;
+  top: 36px;
+  right: 46px;
+}
+
+/* A quick experiment - background didn't work properly and the reason consists of existence of last three tags before background-image. That's why it started to work as soon as I changed their position  here.  */
+.intro {
+  height: calc(100vh - 96px);
+  width: 100%;
+  background: linear-gradient(
+      61deg,
+      rgba(0, 0, 0, 0.481) 0%,
+      rgba(1, 1, 1, 0.6699929971988796) 100%
+    ),
+    url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: rgb(224, 203, 171);
+  text-shadow: 7px 4px 14px rgb(224, 203, 171);
+  -webkit-text-shadow: 7px 4px 14px rgb(224, 203, 171);
+  -moz-text-shadow: 7px 4px 14px rgb(224, 203, 171);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro h1 {
+  font-family: "Oleo Script", system-ui;
+  font-size: 50px;
+  position: relative;
+  top: -120px;
+}
+
+#intro_text {
+  width: 65%;
+  margin-left: 230px;
+  position: absolute;
+  top: 370px;
+}
+
+.present {
+  text-align: center;
+  margin: 20px;
+}
+
+.present h1 {
+  font-size: 30px;
+  font-family: "Oleo Script", system-ui;
+  color: rgb(68, 66, 64);
+  margin: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -webkit-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -moz-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.present p {
+  width: 65%;
+  margin-left: 230px;
+  position: absolute;
+  font-family: "Oleo Script", system-ui;
+  color: rgb(68, 66, 64);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -webkit-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -moz-text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.products_all {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.product {
+  position: relative;
+  border: 2px solid rgb(224, 203, 171);
+  border-radius: 22px;
+  width: calc((100% - 150px) / 4);
+  height: 400px;
+}
+
+.product p {
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  position: absolute;
+  right: 85px;
+  margin-top: 5px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.details {
+  display: flex;
+  flex-flow: row flex-end;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.details h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.details button {
+  color: #e5caad;
+  background-color: rgb(68, 66, 64);
+  font-weight: 600;
+  height: 30px;
+  width: 60px;
+  border: 1px solid rgb(68, 66, 64);
+  border-radius: 10px;
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.details button:hover {
+  color: rgb(68, 66, 64);
+  background-color: #e5caad;
+  border: 1px solid #e5caad;
+}
+
+.like {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(224, 203, 171);
+  border: 1px solid rgba(0, 0, 0, 0.047);
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.like:hover {
+  box-shadow: inset 2px 2px 8px rgb(225, 10, 13);
+  -webkit-box-shadow: inset 2px 2px 8px rgb(225, 10, 13);
+  -moz-box-shadow: inset 2px 2px 8px rgb(225, 10, 13);
+}
+
+.like i {
+  color: rgb(68, 66, 64);
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+/* Why is it impossible to add this code into the hover part of .regisiter class since I want to see the color change when I hover over the div which has a class called register */
+.like i:hover {
+  color: rgb(225, 10, 13);
+}
+
+.slogan {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 370px;
+  position: relative;
+  margin: 50px 0px;
+  background: linear-gradient(
+      61deg,
+      rgba(0, 0, 0, 0.481) 0%,
+      rgba(1, 1, 1, 0.6699929971988796) 100%
+    ),
+    url("https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slogan h1 {
+  font-size: 40px;
+  color: #e5caad;
+  text-align: center;
+  font-family: "Oleo Script", system-ui;
+  text-transform: uppercase;
+  position: absolute;
+  bottom:calc(50% - 40px);
+
+}
+
+.slogan p{
+  color: #e5caad;
+  text-align: center;
+  font-family: "Oleo Script", system-ui;
+  position: absolute;
+  bottom:calc(50% - 70px);
+  
+}
+
+.slogan span{
+  text-transform: uppercase;
+}
+
+.about{
+  
+  width: 1400px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+  font-family: "Oleo Script", system-ui;
+  color: rgb(68, 66, 64);
+}
+
+.about_intro{
+  font-size: 24px;
+  
+}
+
+
+.about_first{
+  width:450px;
+}
+
+.about_second{
+  width: 450px;
+}
+.about_text{
+  margin-top: 15px;
+  width: 100%;
+
+}
+
+
+#about_img1 img{
+  width: auto;
+  height: 70px;
+  position: absolute;
+  top: 35px;
+  left: 220px;
+  z-index: -1;
+
+}
+
+#about_img2 img {
+  width: auto;
+  height: 35px;
+  position: absolute;
+  top: 35px;
+  left: 290px;
+  z-index: -2;
+}
+
+#about_img3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 83%;
+  position: relative;
+
+
+}
+
+.about_second i{
+  font-size: 35px;
+  color:#d97305;
+  
+}
+
+.left{
+  position: absolute;
+  top: 200px;
+  right: 660px;
+}
+
+.right{
+  position: absolute;
+  top: 200px;
+  right: 250px;
+}
+
