@@ -8,15 +8,14 @@
   box-sizing: border-box;
 }
 
-header {
-  position: sticky;
-}
 
 .navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   justify-content: space-around;
   align-items: center;
-  /* padding: 10px 20px; */
   background-color: rgb(137, 115, 88);
 }
 
@@ -60,8 +59,6 @@ header {
 .register {
   width: 40px;
   height: 40px;
-  /* display: flex;
-  flex-flow:column center; */
   background-color: rgb(224, 203, 171);
   border: 1px solid rgba(0, 0, 0, 0.047);
   border-radius: 50%;
